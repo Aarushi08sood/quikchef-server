@@ -10,8 +10,8 @@ const app = express();
 
 // Use environment variables for port and frontend URL
 const port = process.env.PORT || 5002; // Default to 5002 if PORT is not set
-// const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3000'; // Default to localhost:3000 if FRONTEND_URL is not set
-const frontendUrl = 'https://creative-bombolone-87db34.netlify.app'
+const frontendUrl = 'http://localhost:3000'; // Default to localhost:3000 if FRONTEND_URL is not set
+// const frontendUrl = 'https://creative-bombolone-87db34.netlify.app'
 
 // Enable CORS for the frontend URL
 app.use(cors({ origin: frontendUrl }));
