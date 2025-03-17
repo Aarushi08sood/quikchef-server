@@ -11,7 +11,7 @@ const app = express();
 // Use environment variables for port and frontend URL
 const port = process.env.PORT || 5002; // Default to 5002 if PORT is not set
 // const frontendUrl = 'http://localhost:3000'; // Default to localhost:3000 if FRONTEND_URL is not set
-const frontendUrl = 'https://quikchef-client.vercel.app/'
+const frontendUrl = 'https://quikchef-client.vercel.app'
 
 // Enable CORS for the frontend URL
 app.use(cors({ origin: frontendUrl }));
